@@ -28,7 +28,7 @@ This short walk-through will help in understanding branching as well as with rec
     code .
     ```
 
-5. Inside the readme.txt file, add the following line:
+5. Inside the experiments.txt file, add the following line:
 
     >Hello Git and GitHub
 
@@ -80,7 +80,7 @@ This short walk-through will help in understanding branching as well as with rec
     * master
     ```
 
-9. Again, add a blank line to README.txt then add:
+9. Again, add a blank line to experiments.txt then add:
 
     >This is another new line.
 
@@ -119,7 +119,7 @@ This short walk-through will help in understanding branching as well as with rec
     git branch reset-me
     ```
 
-15. Switch into your reset-me branch. Add another blank line to your README.txt file followed by:
+15. Switch into your reset-me branch. Add another blank line to your experiments.txt file followed by:
 
     >I am going to reset this branch.
 
@@ -149,7 +149,7 @@ This short walk-through will help in understanding branching as well as with rec
 
     being sure to paste in the SHA-1 value that you copied.
 
-19. Take a look at your README.txt file. You may notice something different about your file. Depending on whether or not we grabbed the right SHA-1 value. If not, you may see some of the lines of text are now gone. However, if we did grab the right one, all of the lines of text will still be displayed, but if you look closely at the tab in vsCode, there should be a message telling you that the file was deleted from disk. Either way, we need to do a little work to get our data back.
+19. Take a look at your experiments.txt file. You may notice something different about your file. Depending on whether or not we grabbed the right SHA-1 value. If not, you may see some of the lines of text are now gone. However, if we did grab the right one, all of the lines of text will still be displayed, but if you look closely at the tab in vsCode, there should be a message telling you that the file was deleted from disk. Either way, we need to do a little work to get our data back.
 
 20. In your terminal/bash, type in:
 
@@ -157,7 +157,7 @@ This short walk-through will help in understanding branching as well as with rec
     git log
     ```
 
-    Notice that everything except for the initial commit is now gone. We are going to need another command to help us get things back in order.
+    Notice that everything except for the Initial commit is now gone. We are going to need another command to help us get things back in order.
 
 21. Once again in terminal/bash, type:
 
@@ -187,7 +187,7 @@ This short walk-through will help in understanding branching as well as with rec
     git checkout recovered-reset
     ```
 
-    You should now be in the recovered-reset branch that has the lines:
+    You should now be in the recovered-reset branch, and when you look at the experiments.txt file you will see that it has the lines:
 
     >Hello Git and GitHub
     >
@@ -197,7 +197,7 @@ This short walk-through will help in understanding branching as well as with rec
 
     and there should be no indication in the tabs that any files have been deleted from disk.
 
-24. Now it is time to learn how to recover a deleted branch. Switch into your delete-me branch. Add another blank line to your README.txt file followed by:
+24. Now it is time to learn how to recover a deleted branch. Switch into your delete-me branch. Add another blank line to your experiments.txt file followed by:
 
     >I am going to delete this branch.
 
@@ -233,7 +233,7 @@ This short walk-through will help in understanding branching as well as with rec
     git branch recovered-delete SHA-1
     ```
 
-    replacing SHA-1 with the value that you copied, and press enter. Now when you type git branch, you should see that we have just created a new branch called recovered-delete. Switch to that branch and you should see that once again, your README.txt file has the lines:
+    replacing SHA-1 with the value that you copied, and press enter. Now when you type git branch, you should see that we have just created a new branch called recovered-delete. Switch to that branch and you should see that once again, your experiments.txt file has the lines:
 
     >Hello Git and GitHub
     >
