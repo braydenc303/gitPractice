@@ -41,7 +41,7 @@ This short walk-through will help in understanding branching as well as with rec
     followed by:
 
     ```bash
-    git commit -m "initial commit"
+    git commit -m "My first commit."
     ```
 
 7. Let's make another change to our file. Add a blank line followed by the text:
@@ -139,7 +139,7 @@ This short walk-through will help in understanding branching as well as with rec
 
     You should see a series of summaries of each commit with a long series of letters and numbers, this is what is referred to as an SHA-1 value, or "hash". We will need one of these in order to rever t our branch to an earlier version. Luckily we don't need the whole thing.
 
-17. Highlight and copy at least the first seven characters of the SHA-1 value associated with the Initial commit.
+17. Highlight and copy at least the first seven characters of the SHA-1 value associated with the  commit that says, "Added a new line".
 
 18. Now, type the following:
 
@@ -149,7 +149,13 @@ This short walk-through will help in understanding branching as well as with rec
 
     being sure to paste in the SHA-1 value that you copied.
 
-19. Take a look at your experiments.txt file. You should see that the line we just added is now gone, and we are now back to where we were before we made the change.
+    After doing so, you will most likely be told that there is a merge conflict. Resolve it by accepting the incoming change, saving the file and add and commit the changes with the following message:
+
+    ```bash
+    "Reverted a branch."
+    ```
+
+19. Take a look at your experiments.txt file. You should see that the last two lines we added are now gone, and we are now back to where we were before we made the changes.
 
 20. In your terminal/bash, type in:
 
@@ -163,7 +169,7 @@ This short walk-through will help in understanding branching as well as with rec
     git reflog
     ```
 
-    This time, you should see a much longer list things that Git has been keeping track of, including switching from one branch to another, along with shortened versions of the SHA-1 values. Find the one associated with the commit message "Getting ready to reset a branch." and copy the entire short SHA-1 value.
+    This time, you should see a much longer list things that Git has been keeping track of, including switching from one branch to another, along with shortened versions of the SHA-1 values. Find the one associated with the commit message "Getting ready to revert a branch." and copy the entire short SHA-1 value.
 
 22. Now type the following command:
 
