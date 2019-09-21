@@ -245,4 +245,4 @@ This short walk-through will help in understanding branching as well as with rec
     >
     >I am going to delete this branch. -->
 
-We've covered a good bit so far. If you would like to learn more about git and a workflow that will be helpful when working in a small group setting, be sure to check out my [Centralized Workflow](https://github.com/braydenc303/GitTutorial) tutorial. Practice with this or another repo a bit, and if you'd like to learn more from people who really know what they are talking about, checkout the book "Pro Git" by Scott Chacon and Ben Straub [here](https://git-scm.com/book/en/v2).
+We've covered a good bit so far. If you would like to learn more about git and a centralized workflow that will be helpful when working in a small group setting, be sure to check out my [Centralized Workflow](https://github.com/braydenc303/GitTutorial) tutorial. Practice with this or another repo a bit, and if you'd like to learn more from people who really know what they are talking about, checkout the book "Pro Git" by Scott Chacon and Ben Straub [here](https://git-scm.com/book/en/v2).
